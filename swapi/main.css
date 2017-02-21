@@ -1,0 +1,117 @@
+body {
+  font-size: 12px;
+  min-width: 270px;
+  min-height: 320px;
+  margin: 0;
+  padding: 10px;
+  background-image: url(http://a.dilcdn.com/bl/wp-content/uploads/sites/6/2016/01/sullust_04-2400x1200-795653638057.jpg);
+  background-size: cover;
+  background-position: center; }
+
+a {
+  cursor: pointer;
+  transition: color 0.3s;
+  font-size: 14px;
+  line-height: 1.6; }
+  a:hover {
+    color: #0191FD; }
+
+img {
+  max-width: 100%; }
+
+dl {
+  margin: 0;
+  font-weight: 700; }
+  dl dt {
+    float: left; }
+  dl dd {
+    margin-left: 75px; }
+  dl :after {
+    content: "";
+    display: table;
+    clear: both; }
+
+h2 {
+  margin: 15px 0 5px 0;
+  color: #ffd54e; }
+
+.custom-list {
+  margin: 0;
+  padding-left: 20px; }
+  .custom-list a {
+    color: #ffd54e;
+    font-weight: 700; }
+    .custom-list a:hover {
+      color: #468cc8; }
+
+.page-title h1 {
+  text-align: center;
+  margin: 10px 0 10px 0;
+  color: #ffd54e; }
+  .page-title h1 a {
+    font-size: inherit;
+    line-height: inherit; }
+
+.page-details .page-title h1 {
+  text-align: left; }
+
+.grid-items {
+  width: 100%; }
+  .grid-items .item {
+    float: left;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #6b6b6b;
+    text-align: center;
+    background-color: #ffffff; }
+    .grid-items .item .item-img {
+      display: block;
+      margin: 0 auto;
+      width: 100px;
+      height: 100px; }
+    .grid-items .item:nth-child(2n + 1) {
+      clear: left; }
+  .grid-items:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.pagination {
+  padding: 0;
+  margin: 20px 0;
+  text-align: center;
+  -webkit-user-select: none; }
+  .pagination li {
+    display: inline-block;
+    border: 1px solid #494949;
+    background-color: #ffffff; }
+    .pagination li.active {
+      background-color: #468cc8;
+      color: #ffffff; }
+  .pagination a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px; }
+
+.page-details .person-info,
+.page-details .image-wrapper {
+  width: 60%;
+  float: left; }
+
+.page-details .image-wrapper {
+  width: 40%;
+  overflow: hidden; }
+  .page-details .image-wrapper img {
+    min-height: 200px;
+    width: auto;
+    max-width: none;
+    transform: translateX(-35%); }
+
+.page-details:after {
+  content: "";
+  display: table;
+  clear: both; }

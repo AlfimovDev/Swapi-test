@@ -1,0 +1,22 @@
+<div class="text-center">
+    <!-- items being paged -->
+    <div class="page-title"><h1>{{pageTitle}}</h1></div>
+    <div class="grid-items">
+        <div ng-repeat="item in items" class="item">
+            <img src="{{characters[item.id - 1].small_img}}" alt="" class="item-img">
+            <a ng-href="#/details/{{item.id - 1}}" class="item-link">{{item.name}}</a>
+        </div>
+    </div>
+    <!-- pager -->
+    <ul ng-if="pager.pages.length" class="pagination">
+        <li ng-class="{disabled:pager.currentPage === 1}">
+            <a ng-click="setPage(pager.currentPage - 1)"><<</a>
+        </li>
+        <li ng-repeat="page in pager.pages" ng-class="{active:pager.currentPage === page}">
+            <a ng-click="setPage(page)">{{page}}</a>
+        </li>                
+        <li ng-class="{disabled:pager.currentPage === pager.totalPages}">
+            <a ng-click="setPage(pager.currentPage + 1)">>></a>
+        </li>
+    </ul>
+</div>

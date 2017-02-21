@@ -1,0 +1,29 @@
+<div class="page-title"><h1><a href="#/">Star Wars</a> > <span>{{curentChars[curentCharId].name}}</span></h1></div>
+<div class="page-warapper page-details">
+	<div class="person-info">
+		<dl>
+			<dt>species : </dt>
+			<dd> {{curentChars[curentCharId].speciesName}}</dd>
+			<dt>height : </dt>
+			<dd> {{curentChars[curentCharId].height}}</dd>
+			<dt>mass : </dt>
+			<dd> {{curentChars[curentCharId].mass}}</dd>
+			<dt>hair_color : </dt>
+			<dd> {{curentChars[curentCharId].hair_color}}</dd>
+			<dt>skin_color : </dt>
+			<dd> {{curentChars[curentCharId].skin_color}}</dd>
+			<dt>birth_year : </dt>
+			<dd> {{curentChars[curentCharId].birth_year}}</dd>
+			<dt>gender : </dt>
+			<dd> {{curentChars[curentCharId].gender}}</dd>
+		</dl>
+		<h2>Films</h2>
+		<ul class="custom-list"><li ng-repeat="film in films"><a href="#/list/films/{{film.title}}">{{film.title}}</a></li></ul>
+		<h2>Vehicles</h2>
+		<ul class="custom-list"><li ng-repeat="vehicle in vehicles"><a href="#/list/vehicles/{{vehicle.name}}">{{vehicle.name}}</a></li></ul>
+		
+	</div>
+	<div class="image-wrapper">
+		<img src="{{curentChars[curentCharId].large_img}}" alt="">
+	</div>
+</div>
